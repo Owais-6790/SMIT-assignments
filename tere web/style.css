@@ -19,7 +19,7 @@
 }
 
 body {
-    background-color: rgb(241, 241, 243);
+    background-color: rgb(247, 247, 248);
 }
 
 nav {
@@ -64,7 +64,7 @@ nav .button {
 .hero-sec {
     padding: 105px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .text-box {
@@ -139,6 +139,8 @@ nav .button {
 
 
 .apply-box a {
+    font-family: ExtraBold-gilroy;
+    font-size: 22px;
     background-color: black;
     color: white;
     border-radius: 10px;
@@ -288,6 +290,7 @@ nav .button {
 
 .benefits{
     padding: 0 100px;
+    padding-bottom: 200px;
 }
 
 .benefits h1 {
@@ -426,3 +429,43 @@ nav .button {
     color: #9E9DA2;
     font-size: 22px;
 }
+
+/************************ BENEFITS STYLING COMPLETED  *************************/
+
+.footer-content {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 100px;
+    border-bottom: 0.2px solid #9E9DA2;
+}
+
+.footer-content a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+
+.footer-content a img {
+    width: 30px;
+    margin-right: 5px;
+
+}
+
+.rights-reserved {
+    color: #75BF7A;
+    font-family: Medium-gilroy ;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 40px;
+    padding-bottom: 200px;
+}
+
