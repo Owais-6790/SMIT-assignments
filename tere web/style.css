@@ -1,0 +1,428 @@
+@font-face {
+    font-family: medium-gilroy;
+    src: url(./fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: Semibold-gilroy;
+    src: url(./fonts/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: ExtraBold-gilroy;
+    src: url(./fonts/Gilroy-ExtraBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(241, 241, 243);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 140px;
+    padding-top: 40px;
+}
+
+.nav-links a {
+    font-family: medium-gilroy;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 40px;
+    
+}
+
+nav img {
+    margin-right: 200px;
+    width: 180px;
+    height: 50px;
+}
+
+nav .button {
+    font-family: Semibold-gilroy;
+    color: white;
+    font-size: 22px;
+    border-radius: 10px;
+    background-color: #75BF7A;
+    padding: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/************************* NAVBAR STYLING COMPLETED  *************************/
+
+.hero-sec {
+    padding: 105px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-box {
+    padding-top: 60px;
+    padding-right: 80px;
+}
+
+.text-box h1 {
+    font-family: ExtraBold-gilroy;
+    font-size: 60px;
+    margin-bottom: 30px;
+    width: 500px;
+}
+
+.text-box p {
+    font-family: medium-gilroy;
+    color: #9E9DA2;
+    margin-bottom: 80px;
+    width: 550px;
+}
+
+.text-box a {
+    font-size: 24px ;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 8px;
+    font-family: ExtraBold-gilroy;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+}
+
+.text-box a img {
+    position: relative;
+    top: 11px;
+    margin-right: 10px;
+}
+
+/********************** MAIN SECTION STYLING COMPLETED **********************/
+
+.apply {
+    padding: 10px 100px;
+}
+
+.apply-box {
+    background-color: #75BF7A;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.apply-box p {
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    width: 600px;
+    margin-right: 160px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+
+.apply-box input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+
+.apply-box a {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 500px;
+    text-align: center;
+    padding: 25px;
+    margin-left: 10px;
+}
+
+/****************** APPLY SECTION STYLING COMPLETED *************************/
+
+.instructions {
+    padding: 120px 100px;
+}
+
+.how-tere-works {
+    text-align: center;
+}
+
+.how-tere-works h1 {
+    font-family: ExtraBold-gilroy;
+    font-size: 46px;
+}
+
+.how-tere-works span {
+    color: #75BF7A;
+}
+
+.how-tere-works p {
+    font-family: Medium-gilroy;
+    font-size: 23px;
+    text-align: center;
+    color: #9E9DA2;
+    margin-top: 30px;
+}
+
+/* HOW TERE WORK SECTION */
+
+.inst-1-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.inst-1-2 span {
+    font-family: ExtraBold-gilroy ;
+    position: relative;
+    font-size: 34px;
+    right: 40px;
+    bottom: 20px;
+    color: #75BF7A;
+}
+
+.inst-1 {
+    text-align: end;
+    margin-right: 280px;
+}
+
+.inst-1-2 h3 {
+    font-family: ExtraBold-gilroy;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.inst-1-2 p {
+    font-family: Medium-gilroy ;
+    font-size: 20px;
+    color: #9E9DA2;
+    margin-top: 10px;
+}
+
+/* INSTRUCTION POINT 1 AND 2  */
+
+.mob-img {
+    position: relative;
+    bottom: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-image {
+    height: 400px;
+    width: 400px;
+    background-color: #75BF7A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mobile-image img {
+    height: 560px;
+}
+
+
+
+/* MOBILE PICTURE */
+
+.inst-3-4 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    position: relative;
+    bottom: 500px;
+}
+
+.inst-3-4 span {
+    font-family: ExtraBold-gilroy ;
+    position: relative;
+    font-size: 34px;
+    right: 40px;
+    bottom: 20px;
+    color: #75BF7A;
+}
+
+.inst-3 {
+    text-align: end;
+    margin-right: 280px;
+}
+
+.inst-3-4 h3 {
+    font-family: ExtraBold-gilroy;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.inst-3-4 p {
+    font-family: Medium-gilroy ;
+    font-size: 20px;
+    color: #9E9DA2;
+    margin-top: 10px;
+}
+
+/* INSTRUCTION POINT 3 AND 4  */
+
+.dot-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: -350px;
+}
+
+/**************** INSTRUCTION SECTION STYLING COMPLETED **********************/
+
+.benefits{
+    padding: 0 100px;
+}
+
+.benefits h1 {
+    text-align: center;
+    font-family: ExtraBold-gilroy;
+    font-size: 46px;
+}
+
+.benefits h1 span {
+    color: #75BF7A;
+}
+
+/* HEADING STYLING */
+
+.benefit-boxes {
+    margin-top: 60px;
+}
+
+.box-1 {
+    background-color: white;
+    padding: 30px 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 125px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+}
+
+.heading-1 {
+    display: flex;
+}
+
+.heading-1 span {
+    font-family: Medium-gilroy ;
+    font-size: 88px;
+    color: #75BF7A;
+}
+
+.heading-1 h2 {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-family: Semibold-gilroy ;
+    font-size: 33px;
+    font-weight: bolder;
+    line-height: 32px;
+}
+
+.content-1 p {
+    font-family: Medium-gilroy ;
+    color: #9E9DA2;
+    font-size: 22px;
+}
+
+/* BOX 1 STYLING */
+
+.box-2 {
+    background-color: white;
+    padding: 30px 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 125px;
+    margin-bottom: 60px;
+}
+
+.heading-2 {
+    display: flex;
+}
+
+.heading-2 span {
+    font-family: Medium-gilroy ;
+    font-size: 88px;
+    color: #75BF7A;
+}
+
+.content-2 {
+    margin-right: 40px;
+}
+
+.heading-2 h2 {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-family: Semibold-gilroy ;
+    font-size: 33px;
+    font-weight: bolder;
+}
+
+.content-2 p {
+    font-family: Medium-gilroy ;
+    color: #9E9DA2;
+    font-size: 22px;
+}
+
+/* BOX 2 STYLING */
+
+.box-3 {
+    background-color: white;
+    padding: 30px 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 125px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+}
+
+.heading-3 {
+    display: flex;
+}
+
+.heading-3 span {
+    font-family: Medium-gilroy ;
+    font-size: 88px;
+    color: #75BF7A;
+}
+
+.heading-3 h2 {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-family: Semibold-gilroy ;
+    font-size: 33px;
+    font-weight: bolder;
+    line-height: 32px;
+}
+
+.content-3 p {
+    font-family: Medium-gilroy ;
+    color: #9E9DA2;
+    font-size: 22px;
+}
