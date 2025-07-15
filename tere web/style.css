@@ -42,6 +42,14 @@ nav {
     
 }
 
+.nav-links img {
+    display: none;
+}
+
+.line-icon img {
+    display: none;
+}
+
 nav img {
     margin-right: 200px;
     width: 180px;
@@ -59,6 +67,29 @@ nav .button {
     padding-right: 40px;
 }
 
+@media (max-width : 1350px) {
+    nav {
+        padding-left: 20px;
+    }
+
+    nav img {
+        margin-right: 0;
+    }
+
+    .nav-links a {
+        display: none;
+    }
+
+    .nav-links img {
+        display: block;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        margin-left: 600px;
+    }
+
+}
+
 /************************* NAVBAR STYLING COMPLETED  *************************/
 
 .hero-sec {
@@ -69,7 +100,7 @@ nav .button {
 
 .text-box {
     padding-top: 60px;
-    padding-right: 80px;
+    padding-right: 60px;
 }
 
 .text-box h1 {
@@ -102,6 +133,46 @@ nav .button {
     position: relative;
     top: 11px;
     margin-right: 10px;
+}
+
+/* .image-box {
+    padding-left: 80px;
+} */
+
+@media (max-width : 1350px) {
+
+    .hero-sec {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .image-box img {
+        width: 30rem;
+    }
+
+    .text-box{
+        padding: 60px;
+    }
+
+    .text-box h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .text-box p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-box a {
+        text-align: center;
+        margin-left: 100px;
+    }
+
+
 }
 
 /********************** MAIN SECTION STYLING COMPLETED **********************/
@@ -149,6 +220,33 @@ nav .button {
     text-align: center;
     padding: 25px;
     margin-left: 10px;
+}
+
+@media (max-width : 1350px) {
+
+    .apply {
+        padding: 50px;
+    }
+
+    .apply-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 80px;
+    }
+
+    .apply-box p {
+        margin: 0;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .apply-box input {
+        margin-bottom: 40px;
+
+    }
 }
 
 /****************** APPLY SECTION STYLING COMPLETED *************************/
@@ -214,6 +312,29 @@ nav .button {
     margin-top: 10px;
 }
 
+@media (max-width : 1350px) {
+    .inst-1-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 380px;
+        margin-top: 500px;
+    }
+
+    .inst-1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .inst-2 {
+        text-align: center;
+        margin: 0;
+        margin-top: 100px;
+    }
+}
+
 /* INSTRUCTION POINT 1 AND 2  */
 
 .mob-img {
@@ -238,7 +359,13 @@ nav .button {
     height: 560px;
 }
 
-
+@media (max-width : 1350px) {
+    .mob-img {
+        position: relative;
+        bottom: 850px;
+        
+    }
+}
 
 /* MOBILE PICTURE */
 
@@ -278,12 +405,42 @@ nav .button {
     margin-top: 10px;
 }
 
+@media (max-width : 1350px) {
+    .inst-3-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 600px;
+    }
+
+    .inst-3 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .inst-4 {
+        margin: 0;
+        margin-top: 100px;
+        text-align: center;
+    }
+}
+
 /* INSTRUCTION POINT 3 AND 4  */
 
 .dot-icon {
     display: flex;
     justify-content: center;
     margin-top: -350px;
+}
+
+@media (max-width : 1350px) {
+    .dot-icon {
+        position: relative;
+        bottom: 1450px;
+        margin-bottom: -120px;
+
+    }
 }
 
 /**************** INSTRUCTION SECTION STYLING COMPLETED **********************/
@@ -347,6 +504,36 @@ nav .button {
     font-size: 22px;
 }
 
+@media (max-width : 1350px) {
+    .box-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .img-1 img {
+        margin-top: 40px;
+        width: 500px;
+    }
+
+    .benefits {
+        padding: 100px 100px;
+    }
+
+    .heading-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-1 p {
+        text-align: center;
+    }
+}
+
 /* BOX 1 STYLING */
 
 .box-2 {
@@ -390,6 +577,34 @@ nav .button {
     font-size: 22px;
 }
 
+@media (max-width : 1350px) {
+    .box-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-top: 50px;
+        padding: 20px 0;
+    }
+
+    .img-2 img {
+        margin-top: 40px;
+        width: 500px;
+    }
+
+    .heading-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-2 p {
+        text-align: center;
+    }
+
+}
+
 /* BOX 2 STYLING */
 
 .box-3 {
@@ -430,6 +645,35 @@ nav .button {
     font-size: 22px;
 }
 
+@media (max-width : 1350px) {
+    .box-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-top: 50px;
+        padding: 20px 0;
+    }
+
+    .img-3 img {
+        margin-top: 40px;
+        width: 500px;
+    }
+
+    .heading-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-3 p {
+        text-align: center;
+    }
+    
+
+}
+
 /************************ BENEFITS STYLING COMPLETED  *************************/
 
 .footer-content {
@@ -442,6 +686,7 @@ nav .button {
 }
 
 .footer-content a {
+    font-family: ExtraBold-gilroy;
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -467,5 +712,41 @@ nav .button {
     background-color: white;
     padding: 40px;
     padding-bottom: 200px;
+}
+
+@media (max-width : 1350px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content div {
+        margin-top: 100px;
+    }
+
+    .footer-content div img {
+        width: 100%;
+    }
+
+    .foot-logo {
+        margin-right: 20px;
+        width: 30%;
+    }
+
+    .be-our-friend {
+        width: 30%;
+    }
+
+    .footer-content a {
+        font-size: 30px;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .rights-reserved {
+        font-size: 30px;
+    }
 }
 
