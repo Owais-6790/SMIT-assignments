@@ -190,6 +190,7 @@ nav .button {
 }
 
 .apply-box p {
+    font-family: Medium-gilroy ;
     color: white;
     font-weight: 600;
     font-size: 22px;
@@ -697,6 +698,20 @@ nav .button {
     padding: 10px 25px;
 }
 
+.be-our-friend h1 {
+    font-family: Medium-gilroy;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.be-our-friend h3 {
+    margin-top: 15px;
+    font-family: Medium-gilroy;
+    font-weight: 500;
+    font-size: 18px;
+    color: #9E9DA2;
+}
+
 .footer-content a img {
     width: 30px;
     margin-right: 5px;
@@ -736,7 +751,17 @@ nav .button {
     }
 
     .be-our-friend {
+        text-align: center;
         width: 30%;
+    }
+
+    .be-our-friend h1 {
+        font-size: 36px;
+    }
+
+    .be-our-friend h3 {
+        font-size: 26px;
+        width: 100%;
     }
 
     .footer-content a {
