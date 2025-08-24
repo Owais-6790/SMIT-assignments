@@ -153,6 +153,90 @@
 
 // Question no 12
 
-for (let i = 2; i < 20; i++) {
-  console.log(i+2);
-}
+// for (let i = 0; i <= 20; i++) {
+//   if (i % 2 == 0) {
+//     console.log(i)
+//   }
+// }
+
+
+
+
+
+// Question no 13
+
+// var names = ['Ali', 'Sara', 'Ahmed', 'Ayesha']
+
+// for (let i = 0; i < names.length; i++) {
+//   console.log(names[i])
+// }
+
+
+
+
+
+// Question no 14
+
+// table = prompt("enter a number")
+
+// for (let i = 1; i <= 10; i++) {
+  
+//   Number(table)
+//   console.log(table, "x", i ,'=',table*i)
+// }
+
+
+
+
+
+// Question no 15
+
+// User_numbers = [2, 4, 6, 8, 10];
+// Num_total = 0;
+
+// for (let i = 0; i < User_numbers.length; i++) {
+//     Num_total += User_numbers[i];
+// }
+
+// console.log("Sum of all array numbers:", Num_total);
+
+
+
+
+
+// Question no 16
+// User_Name = prompt("enter your name")
+
+// if (User_Name == "Alice" || User_Name == "Bob") {
+//   console.log("Welcome!")
+// } else {
+//   console.log("You are not authorized.")
+// }
+
+
+
+
+// Question no 17
+
+// User_Num = prompt("enter a number")
+
+// if (User_Num >= 0) {
+//   if (User_Num % 2 === 0) {
+//       console.log("Number is positive Even")
+//   } else {
+//       console.log("The number is positve Odd")
+//   }
+// } else {
+//   console.log("the number is negative")
+// }
+
+
+
+
+
+// Question no 18
+fruits = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry']
+
+fruits.splice(2,0,"mango")
+
+console.log(fruits)
