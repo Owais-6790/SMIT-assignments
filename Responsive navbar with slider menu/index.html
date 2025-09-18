@@ -20,7 +20,7 @@
         </nav>
 
 
-        <nav id="sideBarOpen" class="nav-menu">
+        <nav class="Sidebar">
             <a onclick="sideBarClose()" class="cross-button" href="#">X</a>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -38,8 +38,13 @@
 <script>
 
     function sideBarOpen() {
-        const Sidebar = document.querySelector('.nav-menu')
-        nav-menu.style.display = 'block'
+        const Sidebar = document.querySelector('.Sidebar')
+        Sidebar.style.right = '0vw'
+    }
+
+    function sideBarClose() {
+        const Sidebar = document.querySelector('.Sidebar')
+        Sidebar.style.right = '-60vw'
     }
 
 </script>

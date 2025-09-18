@@ -43,31 +43,64 @@ nav a:hover {
     color: grey;
 }
 
-.nav-menu {
+.Sidebar {
+    display: flex;
     align-items: start;
     justify-content: start;
     height: 100vh;
     position: fixed;
     top: 0;
-    right: 0;
-    width: 50%;
+    right: -60vw;
+    width: 30%;
     flex-direction: column;
-    display: none;
+    transition: 0.75s ease-out;
 }
 
 .open-button {
     height: 80%;
     align-items: center;
     font-size: 3vw;
+    display: none;
 }
 
-.nav-menu ul {
+.Sidebar ul {
     flex-direction: column;
     gap: 4vw;
     margin-left: 2vw;
 }
 
-.nav-menu .cross-button {
+.Sidebar .cross-button {
     font-size: 1.5vw;
     margin-bottom: 5vw;
+}
+
+@media (max-width:768px) {
+    nav {
+        padding: 4vw;
+    }
+
+    nav ul li a {
+        display: none;
+    }
+
+    nav a {
+        font-size: 6vw;
+    }
+
+    .open-button {
+        display: block;
+        font-size: 6vw;
+    }
+
+    .Sidebar ul li a {
+        display: block;
+        font-size: 4vw;
+    }
+
+    .Sidebar .cross-button {
+        padding-left: 2vw;
+        font-size: 3.5vw;
+        margin-bottom: 7vw;
+    }
+
 }
