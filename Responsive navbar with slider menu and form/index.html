@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="#">LOGO</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a onclick="sideBarOpen()" class="open-button" href="#">=</a></li>
+            </ul>
+        </nav>
+
+
+        <nav class="Sidebar">
+            <a onclick="sideBarClose()" class="cross-button" href="#">X</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="create-acc-page">
+            <form class="content">
+                <div class="heading-text">
+                    <h1>Create a New Account</h1>
+                    <h3>it's quick and easy</h3>
+                </div>
+                <div class="details">
+                    <input type="text" id="firstName" class="Name" placeholder="First Name">
+                    <input type="text" id="Surname" class="Name" placeholder="Surname">
+
+                    <h4>Date of Birth ?</h4>
+                    <select id="Date" class="Date">
+                        <option value="1st">1st</option>
+                        <option value="13">13</option>
+                        <option value="15">15</option>
+                    </select>
+
+                    <select id="Month" class="Month">
+                        <option value="October">October</option>
+                        <option value="September">September</option>
+                        <option value="November">November</option>
+                    </select>
+
+                    <select id="year" class="year">
+                        <option value="2023">2023</option>
+                        <option value="2006">2006</option>
+                        <option value="2008">2008</option>
+                    </select>
+
+                    <h4>Gender ?</h4>
+                    <label >Male<input type="radio" name="gender"></label>
+                    <label >Female<input type="radio" name="gender"></label>
+                    <label >Custom<input type="radio" name="gender"></label>
+
+                    <input id="Email" class="Email" type="text" placeholder="Mobile Number or Email">
+                    <input id="Pass" class="Password" type="password" placeholder="Password">
+                    <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more...</a></p>
+                    <p>By clicking Sign Up, you agree to our <a href="#">Terms, Privacy Policy</a> and <a href="#">Cookies Policy.</a> You may receive SMS notifications from us and can opt out at any time.</p>
+
+                    <div class="sign-up-buttons">
+                        <button onclick="restrictall()" type="submit" id="signUp">Sign-up</button>
+                        <a href="#" >Already have an Account ?</a>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+    
+</body>
+
+<script src="app.js"></script>
+</html>
