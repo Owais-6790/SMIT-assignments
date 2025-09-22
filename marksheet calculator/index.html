@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="makeItSubmit()" id="form">
+            <h1>Check your Grade, Total and percentage here</h1>
+            <h3>Name :</h3>
+            <input id="studentName" type="text" placeholder="Enter your name">
+            <br>
+            <h4>Enter your Subject's marks here</h4>
+            <h3>Maths :</h3>
+            <input id="Num1" type="number">
+            <h3>Computer :</h3>
+            <input id="Num2" type="number">
+            <h3>English :</h3>
+            <input id="Num3" type="number">
+            <h3>physics :</h3>
+            <input id="Num4" type="number">
+            <h3>Urdu :</h3>
+            <input id="Num5" type="number">
+
+            <button onclick="makeItSubmit()" type="button">CHECK YOUR SCORE</button>
+        </form>
+        
+        <div class="video">
+            <div id="gif" class="submit">
+                <img src="gif-ezgif.com-video-to-gif-converter.gif"></img>
+                <h1>SUBMITTED SUCCESSFULLY CHECK CONSOLE FOR RESULTS</h1>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
