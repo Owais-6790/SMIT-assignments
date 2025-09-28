@@ -66,11 +66,16 @@
         var seconds = nowTime.getSeconds()
         var format = "AM"
             
-            //to switch from 12hours to 24hours
+            //to switch from 12hours to 24hours and switching PM and AM respectively
             let formatValue = document.getElementById("firstFormat").getAttribute("data-format")
 
             if (formatValue === "12"){
-                hours = hours > 12 ? hours % 12 : hours
+                if ( hours >= 12) {
+                    hours = hours % 12
+                    format = "PM"
+                } else if ( hours === 0 ) {
+                    hours = 12
+                }
             } 
             
             // ifs to add 0 if the number is less than 10 and became a single digit number
