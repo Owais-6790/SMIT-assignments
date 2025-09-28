@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-box {
+    padding: 3vw;
+    border: 2px solid greenyellow;
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+    transition: 0.5s;
+}
+
+.clock-box:hover {
+    box-shadow: 0px 0px 50px rgba(172, 255, 47, 0.495);
+}
+
+.date-box {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    gap: 2vw;
+}
+
+.time-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.time-box h1 {
+    color: white;
+    font-size: 6vw;
+    margin-bottom: 1vw;
+}
+
+#format {
+    display: none;
+}
+
+#box span {
+    color: white;
+    font-size: 6vw;
+}
+
+#box p {
+    font-size: 1vw;
+    color: white;
+}
+
+button {
+    padding: 1vw 3vw;
+    border-radius: 2vw;
+    font-size: 2vw;
+    background-color: greenyellow;
+    /* color: white; */
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(195, 248, 115);
+    box-shadow: 0px 0px 20px rgba(172, 255, 47, 0.495);
+
+    
+}
+
+button:active {
+    border: 1px solid white;
+
+}
+
+#timeFormat {
+    margin-bottom: 1.2vw;
+    display: none;
+}
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="clock-box">
+            <div class="date-box">
+                <p id="date">10</p>
+                <p id="month">March</p>
+                <p id="year">2024</p>
+            </div>
+            <div class="time-box">
+                <div id="box" class="hour-box">
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+                <h1>:</h1>
+                <div id="box" class="minute-box">
+                    <span id="minutes">00</span>
+                    <p>minutes</p>
+                </div>
+                <h1>:</h1>
+                <div id="box" class="second-box">
+                    <span id="seconds">00</span>
+                    <p>Seconds</p>
+                </div>
+                <h1 id="format">PM</h1>
+            </div>
+            <div class="button">
+            <button onclick="forFirstFormat()" id="firstFormat" data-format="12" >12 hours</button>
+            <button onclick="forSecondFormat()" id="secondFormat" >24 hours</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+
+    //for button for 12-hours format
+    function forFirstFormat(){
+        let button = document.getElementById("firstFormat")
+        button.setAttribute("data-format", "12")
+        document.getElementById("format").style.display = "block"
+    }
+    //for button for 24-hours format
+    function forSecondFormat(){
+        let button = document.getElementById("firstFormat")
+        button.setAttribute("data-format", "24")
+        document.getElementById("format").style.display = "none"
+    }
+    
+    
+    
+    let updateTime = setInterval(time,1000)
+    
+    function time() {
+        var nowTime = new Date()
+        var hours = nowTime.getHours()
+        var minutes = nowTime.getMinutes()
+        var seconds = nowTime.getSeconds()
+        var format = "AM"
+            
+            //to switch from 12hours to 24hours
+            let formatValue = document.getElementById("firstFormat").getAttribute("data-format")
+
+            if (formatValue === "12"){
+                hours = hours > 12 ? hours % 12 : hours
+            } 
+            
+            // ifs to add 0 if the number is less than 10 and became a single digit number
+            hours = hours < 10 ? "0" + hours : hours;
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            
+            // assigning value to display
+            document.getElementById("hours").innerText = hours
+            document.getElementById("minutes").innerText = minutes
+            document.getElementById("seconds").innerText = seconds
+            document.getElementById("format").innerText = format
+        
+    }
+
+    //for DATE MONTH AND YEAR
+    var today = new Date()
+    var date = today.getDate()
+    var month = today.toLocaleString("default",{month : "long"})
+    var year = today.getFullYear()
+
+    document.getElementById("date").innerHTML = date
+    document.getElementById("month").innerHTML = month
+    document.getElementById("year").innerHTML = year
+
+</script>
+
+
+
+</html>
