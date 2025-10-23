@@ -1,7 +1,7 @@
 const signUpForm = document.getElementById("signUp");
 const loginForm = document.getElementById("loginForm");
 const homePageDisplay = document.getElementById("homePage");
-const userData = JSON.parse(localStorage.getItem("userData"));
+const userData = [];
 
 function signUpInfo() {
   let userName = document.getElementById("userName");
@@ -52,16 +52,23 @@ function loginInfo() {
   let storedDate = JSON.parse(localStorage.getItem("userData"));
   let matched = false;
 
-  for (let i = 0; i < storedDate.length; i++) {
-    if (
-      loginEmail.value === storedDate[i].Email &&
-      loginPassword.value === storedDate[i].Password
-    ) {
-      loginForm.classList.remove("active");
-      homePageDisplay.classList.add("active");
-      displayName.innerText = storedDate[i].Name;
-      matched = true;
-      break;
+  if (loginEmail.value == "" || loginPassword.value == "") {
+    alert("Please fill the required details");
+    matched = true;
+  }
+
+  if (loginEmail.value != "" || loginPassword.value != "") {
+    for (let i = 0; i < storedDate.length; i++) {
+      if (
+        loginEmail.value === storedDate[i].Email &&
+        loginPassword.value === storedDate[i].Password
+      ) {
+        loginForm.classList.remove("active");
+        homePageDisplay.classList.add("active");
+        displayName.innerText = storedDate[i].Name;
+        matched = true;
+        break;
+      }
     }
   }
 
