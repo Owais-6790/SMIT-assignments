@@ -1,57 +1,73 @@
 const signUpForm = document.getElementById("signUp");
 const loginForm = document.getElementById("loginForm");
 const homePageDisplay = document.getElementById("homePage");
+const userData = JSON.parse(localStorage.getItem("userData"));
 
 function signUpInfo() {
-  let userName = document.getElementById("userName").value;
-  let userEmail = document.getElementById("userEmail").value;
-  let userNumber = document.getElementById("userNumber").value;
-  let userPassword = document.getElementById("userPassword").value;
+  let userName = document.getElementById("userName");
+  let userEmail = document.getElementById("userEmail");
+  let userNumber = document.getElementById("userNumber");
+  let userPassword = document.getElementById("userPassword");
 
   if (
-    userName == "" ||
-    userEmail == "" ||
-    userNumber == "" ||
-    userPassword == ""
+    userName.value == "" ||
+    userEmail.value == "" ||
+    userNumber.value == "" ||
+    userPassword.value == ""
   ) {
     alert(`the required details must be filled`);
   }
 
-  localStorage.setItem("Name", userName);
-  localStorage.setItem("Email", userEmail);
-  localStorage.setItem("Number", userNumber);
-  localStorage.setItem("Password", userPassword);
+  let userDetails = {
+    Name: userName.value,
+    Email: userEmail.value,
+    Number: userNumber.value,
+    Password: userPassword.value,
+  };
 
-  signUpForm.classList.remove("active");
-  loginForm.classList.add("active");
+  userData.push(userDetails);
+
+  localStorage.setItem("userData", JSON.stringify(userData));
+
+  if (
+    userName.value != "" ||
+    userEmail.value != "" ||
+    userNumber.value != "" ||
+    userPassword.value != ""
+  ) {
+    signUpForm.classList.remove("active");
+    loginForm.classList.add("active");
+  }
+
+  userName.value = "";
+  userEmail.value = "";
+  userNumber.value = "";
+  userPassword.value = "";
 }
 
 function loginInfo() {
   let loginEmail = document.getElementById("loginEmail");
   let loginPassword = document.getElementById("loginPassword");
-  let storedEmail = localStorage.getItem("Email");
-  let storedPassword = localStorage.getItem("Password");
-  let storedName = localStorage.getItem("Name");
   let displayName = document.getElementById("displayName");
+  let storedDate = JSON.parse(localStorage.getItem("userData"));
+  let matched = false;
 
-  // console.log(loginEmail)
-  // console.log(storedEmail)
-  // console.log(loginPassword)
-  // console.log(storedPassword)
-
-  if (
-    loginEmail.value === storedEmail &&
-    loginPassword.value === storedPassword
-  ) {
-    loginForm.classList.remove("active");
-    homePageDisplay.classList.add("active");
-  } else {
-    alert("User doesn't Exist");
-    loginEmail.value = "";
-    loginPassword.value = "";
+  for (let i = 0; i < storedDate.length; i++) {
+    if (
+      loginEmail.value === storedDate[i].Email &&
+      loginPassword.value === storedDate[i].Password
+    ) {
+      loginForm.classList.remove("active");
+      homePageDisplay.classList.add("active");
+      displayName.innerText = storedDate[i].Name;
+      matched = true;
+      break;
+    }
   }
 
-  displayName.innerText = storedName;
+  if (matched === false) {
+    alert(`User doesn't exist`);
+  }
 }
 
 function forAnchorTagOfRegister() {
